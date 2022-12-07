@@ -13,6 +13,8 @@ Since most of the code for this method is from open-source:
 
 
 ## Opensource codebase statistics
-![image](https://user-images.githubusercontent.com/44308788/206073083-bf31c472-02c6-413d-b65c-9a55fc01d4ee.png)
+Backdoor: 1,159 lines, 91.1% Python, 8.9% Markdown
+
+ONNX Tensorflow: 17,288 lines, 91.4% Python, 7.9% Markdown, 0.5% YAML, 0.1% Shell Scripts, 0% Properties (4 lines)
 
 ####
