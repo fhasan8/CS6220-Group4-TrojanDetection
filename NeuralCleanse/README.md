@@ -7,6 +7,7 @@ The first, OnnxConverter.py, consists of our testing converting .pt files to .on
 
 The second file, convert_to_h5.py, was our large scale attempt to convert the MNIST-trained models from the TDC dataset (see ```Data``` folder from main root page of this repo) and convert them from .pt to .onnx to .pb file types. Unfortunately, while this actually succeeded, the .pb file type was incompatible with the version of TensorFlow necessitated by the NeuralCleanse library. Thus, while we were able to succeed in converting to .pb, we were unable to actually run any of the converted TDC models through NeuralCleanse. 
 
+The remaining source code files in this folder are import requirements for the two listed above. The ```MetaNetwork.py``` file is just the PyTorch implementation of the networks required to convert the .pt file into a .onnx and ```utils.py``` and ```wrn.py``` are util functions and the implementation of WideResNet from the TDC source code required to fully load our models from .onnx to .pb filetypes. We don't make any modifications to these pieces of code but include them in case you may want to execute any of our conversion scripts yourself (see next section).
 
 ### Executable Code
 
@@ -21,7 +22,7 @@ We also used onnx-tensorflow: https://github.com/onnx/onnx-tensorflow
 We wanted to use this to help us convert our ONNX format models into TensorFlow but we obviously did not have good luck with this due to type/versioning conflicts between ONNX and the TensorFlow version of NeuralCleanse
 
 
-Since most of the code for this method is from open-source we list the opensource codebase statistics as mentioned in the Canvas assignment
+Since most of the code for this method is from open-source repositories we list the opensource codebase statistics as mentioned in the Canvas assignment.
 
 
 ## Opensource codebase statistics
