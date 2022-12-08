@@ -9,6 +9,11 @@ The first, OnnxConverter.py, consists of our testing converting .pt files to .on
 The second file, convert_to_h5.py, was our large scale attempt to convert the MNIST-trained models from the TDC dataset (see ```Data``` folder from main root page of this repo) and convert them from .pt to .onnx to .pb file types. Unfortunately, while this actually succeeded, the .pb file type was incompatible with the version of TensorFlow necessitated by the NeuralCleanse library. Thus, while we were able to succeed in converting to .pb, we were unable to actually run any of the converted TDC models through NeuralCleanse. 
 
 
+### Executable Code
+
+We do not have any executable code or scripts to run for the NeuralCleanse approach in our project. Theoretically, if you modify the directory path in the convert_to_h5.py file to your downloaded copy of the TDC dataset, then you could run the script.
+
+
 ## Required Other Repositories
 We made use of the official NeuralCleanse GitHub Repo: https://github.com/bolunwang/backdoor 
 Make sure to download the repo and follow the instructions for setting it up.
@@ -27,4 +32,7 @@ ONNX Tensorflow: 17,288 lines, 91.4% Python, 7.9% Markdown, 0.5% YAML, 0.1% Shel
 
 ####
 
-The essence of our work on this task was running multiple trials to benchmark this method on both CPU and GPU devices. Thus, not a lot of code was necessary in performing these runs. Our codebase is limited to our attempts to convert our TDC dataset (see the ../Data directory) to TensorFlow. Results from those runs can be seen in our Final Report.
+The essence of our work on this task was running multiple trials to benchmark this method on both CPU and GPU devices. Thus, not a lot of code was necessary in performing these runs. Our codebase is limited to our attempts to convert our TDC dataset (see the ../Data directory) to TensorFlow. Results from those runs can be seen in our Final Report. We attempted to use the TDC dataset for this project but ended up just using different variations of the model linked here (https://drive.google.com/file/d/1kcveaJC3Ra-XDuaNqHzYeomMvU8d1npj/view?usp=sharing) by injecting it in different ways and with different triggers. This file is just a model trained on GTSRB. Performance was measured by taking the outputs of the NeuralCleanse ```gtsrb_injection_example.py``` and ```mad_outlier_detection.py``` scripts that can be found in the NeuralCleanse github linked above.
+
+
+
