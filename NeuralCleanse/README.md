@@ -2,7 +2,6 @@
 This is the section for NeuralCleanse. 
 
 ### Source Code
-Not really any source code to speak of beyond OnnxConverter.py and convert_to_h5.py 
 
 The first, OnnxConverter.py, consists of our testing converting .pt files to .onnx files. We experimented with attempting to convert whole folders (see below) before trying to solve the issues we were having on the reduced problem size of just converting one model. This failed and we discuss this in our Final Report.
 
@@ -32,6 +31,7 @@ ONNX Tensorflow: 17,288 lines, 91.4% Python, 7.9% Markdown, 0.5% YAML, 0.1% Shel
 
 ####
 
+### Our Work/Contribution
 The essence of our work on this task was running multiple trials to benchmark this method on both CPU and GPU devices. Thus, not a lot of code was necessary in performing these runs. Our codebase is limited to our attempts to convert our TDC dataset (see the ../Data directory) to TensorFlow. Results from those runs can be seen in our Final Report. We attempted to use the TDC dataset for this project but ended up just using different variations of the model linked here (https://drive.google.com/file/d/1kcveaJC3Ra-XDuaNqHzYeomMvU8d1npj/view?usp=sharing) by injecting it in different ways and with different triggers. This file is just a model trained on GTSRB. Performance was measured by taking the outputs of the NeuralCleanse ```gtsrb_injection_example.py``` and ```mad_outlier_detection.py``` scripts that can be found in the NeuralCleanse github linked above.
 
 
