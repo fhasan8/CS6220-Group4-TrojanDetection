@@ -1,6 +1,14 @@
 # NeuralCleanse Code
 This is the section for NeuralCleanse. 
 
+### Source Code
+Not really any source code to speak of beyond OnnxConverter.py and convert_to_h5.py 
+
+The first, OnnxConverter.py, consists of our testing converting .pt files to .onnx files. We experimented with attempting to convert whole folders (see below) before trying to solve the issues we were having on the reduced problem size of just converting one model. This failed and we discuss this in our Final Report.
+
+The second file, convert_to_h5.py, was our large scale attempt to convert the MNIST-trained models from the TDC dataset (see ```Data``` folder from main root page of this repo) and convert them from .pt to .onnx to .pb file types. Unfortunately, while this actually succeeded, the .pb file type was incompatible with the version of TensorFlow necessitated by the NeuralCleanse library. Thus, while we were able to succeed in converting to .pb, we were unable to actually run any of the converted TDC models through NeuralCleanse. 
+
+
 ## Required Other Repositories
 We made use of the official NeuralCleanse GitHub Repo: https://github.com/bolunwang/backdoor 
 Make sure to download the repo and follow the instructions for setting it up.
