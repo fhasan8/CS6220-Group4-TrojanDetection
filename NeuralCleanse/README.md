@@ -6,7 +6,7 @@ We made use of the official NeuralCleanse GitHub Repo: https://github.com/bolunw
 Make sure to download the repo and follow the instructions for setting it up.
 
 We also used onnx-tensorflow: https://github.com/onnx/onnx-tensorflow 
-We wanted to use this to help us convert our ONNX format models into TensorFlow but we obviously did not have good luck with this last part due to type/versioning conflicts.
+We wanted to use this to help us convert our ONNX format models into TensorFlow but we obviously did not have good luck with this due to type/versioning conflicts between ONNX and the TensorFlow version of NeuralCleanse
 
 
 Since most of the code for this method is from open-source we list the opensource codebase statistics as mentioned in the Canvas assignment
