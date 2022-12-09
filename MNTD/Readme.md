@@ -1,4 +1,4 @@
-#MNTD python notebook
+# MNTD python notebook
 
 MNTD python notebook contains the definition, training, evaluation and analysis code for the MNTD network.
 
