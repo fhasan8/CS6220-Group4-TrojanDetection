@@ -10,3 +10,5 @@ The hyperparameters can be updated and the model can be trained in the notebook.
 The implementation is taken from the baseline implementation - https://github.com/mmazeika/tdc-starter-kit/blob/main/detection/example_submission.ipynb
 
 The new experimental networks along with the analysis code is separately added in the notebook.
+
+The requriments.txt contains all the packages installed in the conda environment used for training MNTD.
